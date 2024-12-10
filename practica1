@@ -1,0 +1,26 @@
+
+Escribe exacta y explícitamente qué archivos fueron creados y dónde.
+Se creo un archivo.class de nombre UsoPersonaje.class en la carpeta mundo.
+
+Describe lo que sucedió al intentar ejecutar otros archivos .class. Explica qué tiene UsoPersonaje.java que lo hace ejecutable.
+UsoPersonaje tiene metodo main osea principal lo que lo hace ejecutable.
+
+1.9 ¿Dónde quedaron ahora los archivos .class?
+Los archivos .class se movieron a el directorio build/icc/mundo.
+
+1.10 ¿A qué comando de los que usaste en la sección anterior, sin ant, correspondería?
+"ant compile" se asemeja a "javac" el cual compila el codigo y "ant run" seria muy parecido al interprete de java que se ejecuta con el comando "java icc.mundo.UsoPersonaje"
+
+1.12 ¿Qué mecanismo crees que utilice Ant para determinar qué compilar?
+Creo que utiliza los archivos de entrada y de salida osea los .java y los .class, los cuales ya estan compilados.
+
+¿Qué obtienes cuando no pasas argumentos?¿Qué obtienes cuando agregas alguno de los personajes sugeridos (cuidado el uso de mayúsculas y minús-
+culas importa)?
+Cuando no pasas argumentos le aparece una lista con todos los argumentos que puedes seleccionar, lo que pasa cuando agregas uno de los personajes sugeridos; es que cuando se ejecuta en el programa se ve que otro personaje aparece.
+
+Prueba con diferentes argumentos y reporta lo que hace el programa.
+El programa lo que hace es cambiar de personaje, pero hace los mismos movientos con todos los personajes.
+
+¿Qué objetivos (target) reconoce cada archivo? ¿Qué pasos ejecutará cada uno de los objetivos (observa el atributo llamado depends)?
+Un build.xml (El de completo) reconoce compile y tambien run.
+(El de roto) El otro tiene doc, clean, run y compile.
